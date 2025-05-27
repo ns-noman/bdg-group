@@ -42,7 +42,7 @@
 
         .slider-text {
             position: absolute;
-            top: 40%;
+            top: 25%;
             left: 5%;
             color: #2E3091;
             width: 600px;
@@ -51,17 +51,19 @@
             transform: translateY(100px);
             animation-delay: 0s;
 
-            h1{
-                font-size: 2.5rem !important;
+            h1 {
+                font-size: 5rem !important;
                 margin-bottom: 20px !important;
-                color: #2E3091 !important;
+                color: #15e0ae !important;
                 font-family: var(--font-family);
+                text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8); /* Soft black glow */
             }
+            
             
             p {
                 font-size: 18px;
                 line-height: 28px;
-                color: #2E3091 !important;
+                color: #15e0ae !important;
                 font-family: var(--font-family);
             }
         }

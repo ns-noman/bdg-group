@@ -5,15 +5,15 @@
             <div class="slider-one">
                 <div class="slider-one-image">
                     <div class="slider-text">
-                        <h1>Corporate Office</h1>
-                        {{-- <p>Magura Group strives to innovate, grow, and support Bangladesh with integrity, creating value in every sector while upholding a strong commitment to the well-being of the nation and its people.</p> --}}
+                        <h1 style="font-size: 50px;">Corporate Office</h1>
+                        {{-- <p>Bangladesh Development Group strives to innovate, grow, and support Bangladesh with integrity, creating value in every sector while upholding a strong commitment to the well-being of the nation and its people.</p> --}}
                     </div>
                 </div>
             </div>
             <div class="slider-two">
                 <div class="slider-two-image">
                     <div class="slider-text">
-                        <h1>South Town Masque</h1>
+                        <h1 style="font-size: 50px;">South Town Masque</h1>
                         <p></p>
                     </div>
                 </div>
@@ -21,7 +21,7 @@
             <div class="slider-three">
                 <div class="slider-three-image">
                     <div class="slider-text">
-                        <h1>Paper Processing & Packaging Limited</h1>
+                        <h1 style="font-size: 50px;">Paper Processing & Packaging Limited</h1>
                         <p></p>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
             <div class="slider-four">
                 <div class="slider-four-image">
                     <div class="slider-text">
-                        <h1>Magura Multiplex PLC</h1>
+                        <h1 style="font-size: 50px;">Magura Multiplex PLC</h1>
                         {{-- <p>Magura Multiplex PLC is dedicated to crafting high-quality papers that empower businesses and enrich communities, reflecting a commitment to sustainability, innovation, and excellence in every sheet produced.</p> --}}
                     </div>
                 </div>
@@ -40,26 +40,38 @@
 
     <!-- Start About Area -->
     <section class="about-area section-padding">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6">
-					<div class="about-img">
-						<img src="{{ asset('public/frontend-assets/img/corporate-profile.jpg') }}" alt="img">
-					</div>
-				</div>
-				<div class="col-lg-6">
-					<div class="about-content">
-						<h4 class="sc_subtitle"><span>WELCOME TO MAGURA 	GROUP</span></h4>
-						<p>With a legacy of over 25 years, Magura Group has evolved into a diverse enterprise, serving Bangladesh through its trusted ventures in food, clothing, housing, education, and healthcare. Known for its quality products and fair pricing, the Group has built a strong reputation, reflecting its commitment to enhancing lives across multiple sectors.</p>
-						<p>Magura Group has shown its adaptability by embracing technology, establishing Bangladesh Advanced Technologies Ltd. to support the nation’s digital transformation and keep pace with global advancements. This innovative outlook underscores the Group's understanding of modern demands and its proactive approach to meeting them.</p>
-						<p>Beyond business success, Magura Group plays a key role in Bangladesh's economic development by creating jobs, investing in local industries, and fostering export-driven growth. Each branch of the Group operates with a mission to uplift communities, contribute to the economy, and support a better quality of life for people across the nation.</p>
-						<p>As Magura Group looks to the future, it carries forward a sense of optimism, aiming to deepen its social commitment to the people and progress of Bangladesh. Their pledge is clear: to continue growing while staying rooted in their core values of integrity, innovation, and social responsibility.</p>
-						<a class="button-1" href="{{ route('home.index', ['corporate-profiles']) }}">About Us</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-img">
+                        <img src="{{ asset('public/frontend-assets/img/corporate-profile.jpg') }}" alt="img">
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-content">
+                        <h4 class="sc_subtitle"><span>WELCOME TO BDG GROUP</span></h4>
+                        <p>With a legacy of over 25 years, Bangladesh Development Group has evolved into a diverse
+                            enterprise, serving Bangladesh through its trusted ventures in food, clothing, housing,
+                            education, and healthcare. Known for its quality products and fair pricing, the Group has built
+                            a strong reputation, reflecting its commitment to enhancing lives across multiple sectors.</p>
+                        <p>Bangladesh Development Group has shown its adaptability by embracing technology, establishing
+                            Bangladesh Advanced Technologies Ltd. to support the nation’s digital transformation and keep
+                            pace with global advancements. This innovative outlook underscores the Group's understanding of
+                            modern demands and its proactive approach to meeting them.</p>
+                        <p>Beyond business success, Bangladesh Development Group plays a key role in Bangladesh's economic
+                            development by creating jobs, investing in local industries, and fostering export-driven growth.
+                            Each branch of the Group operates with a mission to uplift communities, contribute to the
+                            economy, and support a better quality of life for people across the nation.</p>
+                        <p>As Bangladesh Development Group looks to the future, it carries forward a sense of optimism,
+                            aiming to deepen its social commitment to the people and progress of Bangladesh. Their pledge is
+                            clear: to continue growing while staying rooted in their core values of integrity, innovation,
+                            and social responsibility.</p>
+                        <a class="button-1" href="{{ route('home.index', ['corporate-profiles']) }}">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- End About Area -->
 
     <!-- Start Counter Area -->
@@ -198,7 +210,8 @@
                                 </div>
                             </div>
                             <div class="content">
-                                <h2 class="title"><a
+                                <h2 class="title">
+                                    <a
                                         href="{{ route('home.index', ['products', $product['id']]) }}">{{ $product['title'] }}</a>
                                 </h2>
                             </div>
