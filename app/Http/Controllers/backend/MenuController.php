@@ -35,6 +35,8 @@ class MenuController extends Controller
     public function store(Request $request)
     {
         $data = $request->all();
+
+        if(!$data['srln']) $data['srln'] =  Menu::where('parent_id', $data['parent_id'])->max('srln') + 1;
         $data['is_side_menu'] = isset($data['is_side_menu']) ? 1 : 0;
         $data['status'] = isset($data['status']) ? 1 : 0;
         Menu::create($data);
@@ -50,8 +52,8 @@ class MenuController extends Controller
     }
     public function destroy($id)
     {
-        // $menu = Menu::find($id);
-        // $menu->destroy($id);
-        // return redirect()->back()->with('alert',['messageType'=>'success','message'=>'Data Deleted Successfully!']);
+        $menu = Menu::find($id);
+        $menu->destroy($id);
+        return redirect()->back()->with('alert',['messageType'=>'success','message'=>'Data Deleted Successfully!']);
     }
 }

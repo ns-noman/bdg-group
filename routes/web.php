@@ -125,6 +125,7 @@ Route::prefix('backend')->group(function () {
                 Route::put('update/{id}','update')->name('messages.update');
                 Route::delete('delete/{id}','destroy')->name('messages.destroy');
                 Route::get('messages','message')->name('messages.message');
+                Route::get('mark-as-read/{id}','markAsRead')->name('messages.mark-as-read');
             });
             
             Route::prefix('logout')->controller(AdminController::class)->group(function(){

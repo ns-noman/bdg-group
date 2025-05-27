@@ -29,7 +29,7 @@ class Menu extends Model
     {
         return $this->hasMany(Menu::class, 'parent_id')->where('status',1)->orderBy('srln','asc');
     }
-    public function childrenforsidemenu()
+    public function childrenmenu()
     {
         return $this->hasMany(Menu::class, 'parent_id')->where('status',1)->orderBy('srln','asc');
     }
